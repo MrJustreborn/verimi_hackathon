@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.ecsec.verimi.hackathon.mediamerkt;
+package de.ecsec.verimi.hackathon.mediamarkt;
 
 import de.skidentity.common.server.velocity.TemplateHelper;
 import java.io.IOException;

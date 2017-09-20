@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-    color: #fff;
+    color: #000;
 }
 
 /* Custom default button */
@@ -32,7 +32,7 @@ body {
 body {
     color: #111;
     text-align: center;
-    text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+    /*text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);*/
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -157,4 +157,12 @@ body {
     .cover-container {
 	width: 42rem;
     }
+}
+
+#acceptBtn, #cancelBtn {
+    font-size: 0.7em;
+}
+
+.rightFloat {
+    float: right;
 }

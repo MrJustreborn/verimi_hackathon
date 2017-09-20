@@ -20,4 +20,32 @@ $(document).ready(function () {
 		});
 	});
 
+	$('#buyBtn').click(function () {
+		console.log("Buy Button.");
+	});
+
+	$('#creditBtn').click(function () {
+		console.log("Credit Button.");
+	});
+
+	$('#continueBtn').click(function () {
+		console.log("Continue Button.");
+	});
+
+	$('#cancelBtn').click(function () {
+		console.log("Cancel Button.");
+	});
+
+	$('#downloadBtn').click(function() {
+		console.log("Download Button.");
+	});
+
+	$('#loginBtn').click(function() {
+		console.log("Login Button.");
+	});
+
+	$('#acceptBtn').click(function() {
+		console.log("Accept Button.");
+	});
+
 });
