@@ -15,7 +15,7 @@
 			  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
 		<!-- Bootstrap Example Cover -->
-		<link rel="stylesheet" href="app/css/cover.css" >
+		<link rel="stylesheet" href="app/css/mm_style.css" >
 
 		<!-- Own Stylesheet -->
 		<link rel="stylesheet" href="app/css/style.css" >
@@ -29,31 +29,36 @@
 					<!-- Head and Nav -->
 					<div class="masthead clearfix">
 						<div class="inner">
-							<img src="app/img/verimi_logo.png" alt="Verimi Logo" style="position: relative; left: -200px;">
+							<img src="app/img/mediamarkt.png" alt="Mediamarkt Logo" style="width: 300px;">
 							<nav class="nav nav-masthead">
-								<a class="nav-link active" href="#">Home</a>
-								<a class="nav-link" href="#">Settings</a>
+								<a class="nav-link active" href="#">Impressum</a>
+								<a class="nav-link" href="#">Help</a>
 							</nav>
 						</div>
 					</div>
 
 					<!-- Main -->
 					<div class="inner cover">
-						<p class="lead">
-							Add identity</p>
-						<form>
-							<div class="form-group">
-								<label for="exampleFormControlSelect1">Choose identity option</label>
-								<select class="form-control" id="exampleFormControlSelect1">
-									<option>EstID</option>
-									<option>BeID</option>
-									<option>France Connect</option>
-									<option>SerbID</option>
-									<option>GeorgianID</option>
-								</select>
+						<h4 style="padding-bottom: 20px; padding-top: 20px;">Shopping cart</h4>
+						<div class="row">
+							<div class="col-4">
+								<img src="app/img/tv.png" alt="TV" style="width: 100px;">
+								<p>€ 69.000,00</p>
 							</div>
+							<div class="col-8">
+								<h6>SONY KD100ZD9BAEP LED TV (Flat, 100 Zoll, UHD 4K, 3D, SMART TV, Android TV)</h6>
+								<p style="font-size: 0.7rem;">Produkttyp: LED TV, Bildschirmform: Flat, Bildschirmdiagonale (Zoll): 100 Zoll,
+									Bildqualität: UHD 4K, Bildwiederholungsfrequenz: 1200 Hz XR, 3D: Ja, SMART TV:
+									Ja, Empfangsarten: DVB-T2 HD, DVB-C, DVB-S, DVB-S2, Anschlüsse: 1x SCART, 4x HDMI,
+									3x USB, 1x Kophhöreranschluss, Bildschirmdiagonale (cm): 253 cm</p>
+							</div>
+						</div>
+						<form id="continueForm">
 							<p class="lead">
-								<a id="loginBtn" href="#" class="btn btn-lg btn-secondary">Add identity</a>
+								<a id="buyBtn" href="#" class="btn btn-lg btn-secondary">Immediate payment</a>
+							</p>
+							<p class="lead" style="margin-right: 10px;">
+								<a id="creditBtn" href="#" class="btn btn-lg btn-secondary">Request consumer credit</a>
 							</p>
 						</form>
 					</div>

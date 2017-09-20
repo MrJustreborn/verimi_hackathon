@@ -15,7 +15,7 @@
 			  integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
 		<!-- Bootstrap Example Cover -->
-		<link rel="stylesheet" href="app/css/cover.css" >
+		<link rel="stylesheet" href="app/css/mm_style.css" >
 
 		<!-- Own Stylesheet -->
 		<link rel="stylesheet" href="app/css/style.css" >
@@ -29,32 +29,50 @@
 					<!-- Head and Nav -->
 					<div class="masthead clearfix">
 						<div class="inner">
-							<img src="app/img/verimi_logo.png" alt="Verimi Logo" style="position: relative; left: -200px;">
+							<img src="app/img/mediamarkt.png" alt="Mediamarkt Logo" style="width: 300px;">
 							<nav class="nav nav-masthead">
-								<a class="nav-link active" href="#">Home</a>
-								<a class="nav-link" href="#">Settings</a>
+								<a class="nav-link active" href="#">Impressum</a>
+								<a class="nav-link" href="#">Help</a>
 							</nav>
 						</div>
 					</div>
 
 					<!-- Main -->
 					<div class="inner cover">
-						<p class="lead">
-							Add identity</p>
+						<h4 style="padding-bottom: 20px;">Credit requested for:</h4>
 						<form>
-							<div class="form-group">
-								<label for="exampleFormControlSelect1">Choose identity option</label>
-								<select class="form-control" id="exampleFormControlSelect1">
-									<option>EstID</option>
-									<option>BeID</option>
-									<option>France Connect</option>
-									<option>SerbID</option>
-									<option>GeorgianID</option>
-								</select>
+							<div class="form-group row">
+								<label for="firstname" class="col-sm-2 col-form-label">First Name</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="firstname" disabled>
+								</div>
 							</div>
-							<p class="lead">
-								<a id="loginBtn" href="#" class="btn btn-lg btn-secondary">Add identity</a>
-							</p>
+							<div class="form-group row">
+								<label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="lastname" disabled>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="address" class="col-sm-2 col-form-label">Address</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="address" disabled>
+								</div>
+							</div>
+							<div class="form-group row">
+								<label for="country" class="col-sm-2 col-form-label">Country</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="country" disabled>
+								</div>
+							</div>
+							<div style="margin-bottom: 50px;">
+								<p class="lead">
+									<a id="continueBtn" href="#" class="btn btn-lg btn-secondary">Continue</a>
+								</p>
+								<p class="lead" style="margin-right: 10px;">
+									<a id="cancelBtn" href="#" class="btn btn-lg btn-secondary">Cancel</a>
+								</p>
+							</div>
 						</form>
 					</div>
 
