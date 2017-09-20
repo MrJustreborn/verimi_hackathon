@@ -50,11 +50,11 @@ public class IdAdded extends HttpServlet {
 
 	HttpSession sess = request.getSession(false);
 	if (sess != null) {
-	SAMLHelper helper = new SAMLHelper(sess);
-	currentAttributes = new AttributeExtractor(helper.getAttributeList());
+	    SAMLHelper helper = new SAMLHelper(sess);
+	    currentAttributes = new AttributeExtractor(helper.getAttributeList());
 
-	ctx.put("ex", currentAttributes);
-	th.eval("id-added", ctx, request.getLocale(), sw);
+	    ctx.put("ex", currentAttributes);
+	    th.eval("id-added", ctx, request.getLocale(), sw);
 	} else {
 	    response.sendError(404, "No authentication performed.");
 	}
