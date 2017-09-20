@@ -24,7 +24,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author Mike Prechtl
  */
-@WebServlet(name = "Cart", urlPatterns = {"/mediamarkt/credit"})
+@WebServlet(name = "Credit", urlPatterns = {"/mediamarkt/credit"})
 public class Credit extends HttpServlet {
 
     private TemplateHelper th;
