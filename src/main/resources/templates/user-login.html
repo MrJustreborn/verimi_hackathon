@@ -29,7 +29,7 @@
 					<!-- Head and Nav -->
 					<div class="masthead clearfix">
 						<div class="inner">
-							<img src="app/img/verimi_logo.png" alt="Verimi Logo" style="position: relative; left: -100px;">
+							<img src="app/img/verimi_logo.png" alt="Verimi Logo" style="position: relative; left: -200px;">
 							<nav class="nav nav-masthead">
 								<a class="nav-link active" href="#">Home</a>
 								<a class="nav-link" href="#">Settings</a>
@@ -39,22 +39,42 @@
 
 					<!-- Main -->
 					<div class="inner cover">
-						<p class="lead">
-							Add identity</p>
+						<h4 style="padding-bottom: 20px;">Required attributes:</h4>
 						<form>
-							<div class="form-group">
-								<label for="exampleFormControlSelect1">Choose identity option</label>
-								<select class="form-control" id="exampleFormControlSelect1">
-									<option>EstID</option>
-									<option>BeID</option>
-									<option>France Connect</option>
-									<option>SerbID</option>
-									<option>GeorgianID</option>
-								</select>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" checked="true" disabled>
+									First Name
+								</label>
 							</div>
-							<p class="lead">
-								<a id="loginBtn" href="login" class="btn btn-lg btn-secondary">Add identity</a>
-							</p>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" checked="true" disabled>
+									Last Name
+								</label>
+							</div>
+							#if( $ex.IDNumber )
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" checked="true" disabled>
+									IDNumber
+								</label>
+							</div>
+							#end
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="" checked="true" disabled>
+									Country
+								</label>
+							</div>
+							<div style="margin-bottom: 50px;">
+								<p class="rightFloat">
+									<a id="acceptBtn" href="/mediamarkt/credit" class="btn btn-lg btn-secondary">Continue</a>
+								</p>
+								<p class="rightFloat" style="margin-right: 10px;">
+									<a id="cancelBtn" href="#" class="btn btn-lg btn-secondary">Cancel</a>
+								</p>
+							</div>
 						</form>
 					</div>
 
