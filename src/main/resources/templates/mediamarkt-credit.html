@@ -40,7 +40,7 @@
 					<!-- Main -->
 					<div class="inner cover">
 						<h4 style="padding-bottom: 20px;">Credit requested for:</h4>
-						<form action="/sign-server/dss/demo/sign?idn=$ex.IDNumber&fn=$ex.FirstName&ln=$ex.LastName">
+						<form>
 							<div class="form-group row">
 								<label for="firstname" class="col-sm-2 col-form-label">First Name</label>
 								<div class="col-sm-10">
@@ -61,7 +61,7 @@
 							</div>-->
 							<div style="margin-bottom: 50px;">
 								<p class="lead">
-									<button type="submit" name="action" class="btn btn-lg btn-secondary">Continue</button>
+									<a id="bla" href="/sign-server/dss/demo/sign?idn=$ex.IDNumber&fn=$ex.FirstName&ln=$ex.LastName" class="btn btn-lg btn-secondary">Continue</button>
 								</p>
 								<p class="lead" style="margin-right: 10px;">
 									<a id="cancelBtn" href="#" class="btn btn-lg btn-secondary">Cancel</a>

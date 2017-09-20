@@ -49,13 +49,8 @@ public class Credit extends HttpServlet {
 
 	AttributeExtractor ex = IdAdded.currentAttributes;
 
-	HttpSession sess = request.getSession(false);
-	if (sess != null) {
-	    ctx.put("ex", ex);
-	    th.eval("mediamarkt-credit", ctx, request.getLocale(), sw);
-	} else {
-	    response.sendError(404, "No authentication performed.");
-	}
+	ctx.put("ex", ex);
+	th.eval("mediamarkt-credit", ctx, request.getLocale(), sw);
     }
 
 }
