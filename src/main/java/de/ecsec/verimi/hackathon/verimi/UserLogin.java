@@ -47,13 +47,8 @@ public class UserLogin extends HttpServlet {
 
 	AttributeExtractor ex = IdAdded.currentAttributes;
 
-	HttpSession sess = request.getSession(false);
-	if (sess != null) {
-	    ctx.put("ex", ex);
-	    th.eval("user-login", ctx, request.getLocale(), sw);
-	} else {
-	    response.sendError(404, "No authentication performed.");
-	}
+	ctx.put("ex", ex);
+	th.eval("user-login", ctx, request.getLocale(), sw);
     }
 
 }
